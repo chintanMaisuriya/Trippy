@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Tl0-9R-8yV">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Comfortaa-Medium.ttf">
+            <string>Comfortaa-Medium</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="MmR-kj-04C">
+            <objects>
+                <viewController id="Tl0-9R-8yV" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fWg-gQ-67v">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg4" translatesAutoresizingMaskIntoConstraints="NO" id="0F1-rg-zzs">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash" translatesAutoresizingMaskIntoConstraints="NO" id="Orj-WJ-IL3">
+                                <rect key="frame" x="0.0" y="53.5" width="320" height="120"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Orj-WJ-IL3" secondAttribute="height" multiplier="8:3" id="7GH-hB-J6O"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="751" text="MVC Example © Chintan Maisuriya | 2021 " textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="lNi-7u-J0o">
+                                <rect key="frame" x="0.0" y="532" width="320" height="28"/>
+                                <color key="backgroundColor" systemColor="secondarySystemFillColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="U2p-UB-Bdn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Comfortaa-Medium" family="Comfortaa" pointSize="12"/>
+                                <color key="textColor" name="Color_Text2"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="dZ5-wD-8li"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="0F1-rg-zzs" firstAttribute="leading" secondItem="dZ5-wD-8li" secondAttribute="leading" id="Gn4-me-JqH"/>
+                            <constraint firstItem="0F1-rg-zzs" firstAttribute="top" secondItem="fWg-gQ-67v" secondAttribute="top" id="IHe-Ud-bS3"/>
+                            <constraint firstItem="Orj-WJ-IL3" firstAttribute="width" secondItem="fWg-gQ-67v" secondAttribute="width" id="MKj-wG-vMJ"/>
+                            <constraint firstItem="lNi-7u-J0o" firstAttribute="trailing" secondItem="dZ5-wD-8li" secondAttribute="trailing" id="Tb4-qI-Hij"/>
+                            <constraint firstItem="0F1-rg-zzs" firstAttribute="trailing" secondItem="dZ5-wD-8li" secondAttribute="trailing" id="Vzq-fA-4zp"/>
+                            <constraint firstItem="Orj-WJ-IL3" firstAttribute="centerY" secondItem="fWg-gQ-67v" secondAttribute="centerY" multiplier="0.4" id="aub-dH-yzG"/>
+                            <constraint firstItem="Orj-WJ-IL3" firstAttribute="centerX" secondItem="fWg-gQ-67v" secondAttribute="centerX" id="grS-sn-eAk"/>
+                            <constraint firstItem="dZ5-wD-8li" firstAttribute="bottom" secondItem="lNi-7u-J0o" secondAttribute="bottom" constant="8" id="hTY-10-kue"/>
+                            <constraint firstItem="lNi-7u-J0o" firstAttribute="leading" secondItem="dZ5-wD-8li" secondAttribute="leading" id="htA-RR-E5G"/>
+                            <constraint firstItem="0F1-rg-zzs" firstAttribute="bottom" secondItem="fWg-gQ-67v" secondAttribute="bottom" id="sBh-fX-Lf0"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CjJ-NX-Ph0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.5" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bg4" width="668" height="1002"/>
+        <image name="splash" width="1084" height="356"/>
+        <namedColor name="Color_Text2">
+            <color red="0.27450980392156865" green="0.27450980392156865" blue="0.27450980392156865" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="secondarySystemFillColor">
+            <color red="0.47058823529411764" green="0.47058823529411764" blue="0.50196078431372548" alpha="0.16" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
